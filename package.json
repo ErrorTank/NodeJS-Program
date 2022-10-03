@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1": "nodemon src/task-1.js",
+    "task2": "nodemon src/task-2.js",
+    "task3": "nodemon --exec babel-node src/task-3.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErrorTank/NodeJS-Program.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErrorTank/NodeJS-Program/issues"
+  },
+  "homepage": "https://github.com/ErrorTank/NodeJS-Program#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
