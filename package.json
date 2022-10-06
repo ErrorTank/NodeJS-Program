@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErrorTank/NodeJS-Program.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErrorTank/NodeJS-Program/issues"
+  },
+  "homepage": "https://github.com/ErrorTank/NodeJS-Program#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
