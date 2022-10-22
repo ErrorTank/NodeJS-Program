@@ -1,5 +1,6 @@
-import { userService } from "../services";
+import {userService} from "../services";
 import loadSequelize from '../loaders/sequelize'
+import Logger from "../logger";
 
 const users = [
     {
@@ -25,9 +26,9 @@ const seed = async () => {
     try {
         await loadSequelize();
         await seed();
-        console.log('Seed successfully!');
-    } catch (error) {
-        console.error('Seed failed!', error);
+        Logger.info('Seed successfully!');
+    } catch(error) {
+        Logger.error(error);
         process.exit(1);
     }
 })()

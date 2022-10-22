@@ -1,13 +1,14 @@
+import Logger from "../logger";
 import sequelize from "../sequelize";
 
 const loadSequelize = async () => {
-    console.log(`Checking database connection...`);
+    Logger.info(`Checking database connection...`);
     try {
         await sequelize.authenticate();
-        console.log('Database connection OK!');
-    } catch (error) {
-        console.log('Unable to connect to the database:');
-        console.log(error.message);
+        Logger.info('Database connection OK!');
+    } catch(error) {
+        Logger.info('Unable to connect to the database:');
+        Logger.error(error);
         process.exit(1);
     }
 }
