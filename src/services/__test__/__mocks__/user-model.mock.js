@@ -17,13 +17,3 @@ const mockUserModel = {
 }
 
 export default mockUserModel;
-
-export {
-    mockFindAll,
-    mockFindByPk,
-    mockCreate,
-    mockUpdate,
-    mockDestroy,
-    mockBulkCreate,
-    mockSync
-}

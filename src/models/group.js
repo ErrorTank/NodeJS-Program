@@ -1,23 +1,25 @@
 import {DataTypes, UUIDV4} from "sequelize";
+import GROUP_PERMISSION from "../constant/group-permission";
 
-const UserModel = (sequelize) => {
-    return sequelize.define('user', {
+const GroupModel = (sequelize) => {
+    return sequelize.define('group', {
         id: {
             allowNull: false,
             type: DataTypes.UUID,
             defaultValue: UUIDV4,
             primaryKey: true
         },
-        username: {
+        name: {
             allowNull: false,
             type: DataTypes.STRING,
         },
-        email: {
+        permissions: {
             allowNull: false,
-            type: DataTypes.STRING,
-            unique: true
+            type: DataTypes.ARRAY(DataTypes.ENUM({
+                values: Object.values(GROUP_PERMISSION)
+            })),
         }
     });
 };
 
-export default UserModel;
+export default GroupModel;
