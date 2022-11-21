@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Services getAll Should return all users 1`] = `
+[
+  {
+    "id": "2",
+  },
+]
+`;
